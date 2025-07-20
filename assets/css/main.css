@@ -20,12 +20,14 @@
 
 /* Global Colors - The following color variables are used throughout the website */
 :root { 
-  --background-color: #3a3838; /* Soft charcoal background for a sleek, modern feel */
-  --default-color: #dcdcdc; /* Lighter text color for better readability */
-  --heading-color: #f5f5f5; /* Light, professional color for headings */
-  --accent-color: #4caf50; /* A calm, yet vibrant accent color for a professional look */
-  --surface-color: #333333; /* Darker surface color for cards, section boxes, and content areas */
+  --background-color: #181a20; /* Professional dark blue-gray */
+  --default-color: #e0e0e0;    /* Light text for readability */
+  --heading-color: #ffffff;    /* Pure white for headings */
+  --accent-color: #4caf50;     /* Keep accent green */
+  --surface-color: #23262f;    /* Slightly lighter for cards/sections */
   --contrast-color: #ffffff; /* White contrast for text to ensure readability */
+  --section-gradient-1: linear-gradient(135deg, #23262f 60%, #2b3140 100%);
+  --section-gradient-2: linear-gradient(135deg, #23262f 60%, #1e2230 100%);
 }
 
 /* Nav Menu Colors - Specific to navigation menu */
@@ -65,7 +67,7 @@
 --------------------------------------------------------------*/
 body {
   color: var(--default-color);
-  background-color: var(--background-color);
+  background: url('../img/coverimage.jpg') center center/cover no-repeat fixed;
   font-family: var(--default-font);
 }
 
@@ -230,7 +232,10 @@ h6 {
   --heading-color: #ffffff;
   --contrast-color: #f3eaea;
   color: var(--default-color);
-  background-color: var(--background-color);
+  background: rgba(24, 26, 32, 0.25) !important;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 2px 16px rgba(0,0,0,0.10);
   padding: 15px 0;
   transition: all 0.5s;
   z-index: 997;
@@ -782,21 +787,53 @@ h6 {
 /*--------------------------------------------------------------
 # Global Sections
 --------------------------------------------------------------*/
-section,
-.section {
+/* Generic section background image and overlay */
+.section,
+section {
   color: var(--default-color);
-  background-color: var(--background-color);
-  padding: 60px 0;
-  scroll-margin-top: 85px;
-  overflow: clip;
+  background-color: #20232a; /* Slightly lighter than body for contrast */
+  background-image: linear-gradient(135deg, #23262f 60%, #222c36 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-radius: 18px;
+  margin-bottom: 32px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.08);
+  /* Remove any previous background-image: none; */
 }
 
-@media (max-width: 1199px) {
+/* Alternate section style for visual separation */
+.section.alt-section,
+section.alt-section {
+  background-color: #23262f;
+  background-image: linear-gradient(135deg, #23262f 60%, #1a1d23 100%);
+}
 
-  section,
-  .section {
-    scroll-margin-top: 66px;
-  }
+/* Example: Add alt-section class to every other section in your HTML for a layered effect */
+
+/* Overlay for all sections for better text readability */
+.section::before,
+section::before {
+  content: none;
+}
+
+/* .section > .container,
+section > .container {
+  position: static;
+  z-index: auto;
+} */
+
+/* Remove custom backgrounds for specific sections */
+.students-mentored-section {
+  background-color: var(--background-color);
+}
+
+.services.section {
+  background-image: none;
+}
+
+.contact.section {
+  background-image: none;
 }
 
 /*--------------------------------------------------------------
@@ -1145,6 +1182,38 @@ section,
 .services .service-item .description {
   line-height: 24px;
   font-size: 14px;
+}
+
+#services .service-item {
+  margin-bottom: 24px;
+  padding: 28px 18px 24px 18px;
+  background: rgba(30,32,40,0.75);
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+  border: 1.5px solid rgba(76,175,80,0.10);
+  transition: box-shadow 0.2s, transform 0.2s, border 0.2s;
+}
+#services .service-item:hover {
+  box-shadow: 0 8px 32px rgba(76,175,80,0.18);
+  border: 1.5px solid var(--accent-color);
+  transform: translateY(-6px) scale(1.03);
+}
+#services .icon {
+  font-size: 2.5rem;
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+}
+#services .title {
+  color: var(--heading-color);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  font-size: 1.18rem;
+  letter-spacing: 0.5px;
+}
+#services .description {
+  color: var(--default-color);
+  font-size: 1rem;
+  margin-bottom: 0;
 }
 
 /*--------------------------------------------------------------
@@ -2028,4 +2097,361 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+/* Academic & Startup Impact Section */
+.students-mentored-section {
+  background-color: var(--background-color);
+  /* ...existing code... */
+  background-image: none;
+}
+
+/* Overlay for all sections for better text readability */
+.students-mentored-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(34, 34, 34, 0.65); /* dark overlay */
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Ensure section content is above overlay */
+.students-mentored-section > .container {
+  position: relative;
+  z-index: 3;
+}
+
+/* Professional look: Card/Box shadow for stats and service items */
+.stats-item,
+.service-item,
+.students-mentored-section .col-6,
+.students-mentored-section .col-md-4 {
+  background: color-mix(in srgb, var(--surface-color), transparent 90%);
+  border-radius: 12px;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.08);
+  padding: 32px 0 20px 0;
+  margin-bottom: 24px;
+  transition: box-shadow 0.3s;
+}
+
+.stats-item:hover,
+.service-item:hover {
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.16);
+}
+
+/* Professional buttons */
+.btn,
+.btn-getstarted {
+  border-radius: 50px;
+  padding: 10px 32px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  border: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn:hover,
+.btn-getstarted:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 10%);
+  color: var(--contrast-color);
+}
+
+/* Section separation */
+.section,
+section {
+  margin-bottom: 0;      /* Remove extra bottom margin */
+  padding-top: 48px;     /* Reduce top padding */
+  padding-bottom: 48px;  /* Reduce bottom padding */
+  border-radius: 16px;
+}
+
+/* Headings */
+h2, .section-title h2 {
+  font-family: var(--heading-font);
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+/* Paragraphs */
+p, .section-title p {
+  font-size: 1.1rem;
+  color: var(--default-color);
+  line-height: 1.7;
+}
+
+/* Remove inline styles for students-mentored-section numbers and text */
+.students-mentored-section .stats-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--accent-color);
+}
+
+.students-mentored-section .stats-label {
+  color: var(--default-color);
+  font-size: 1.1rem;
+}
+
+/*--------------------------------------------------------------
+# Roadmap Section
+--------------------------------------------------------------*/
+.roadmap-timeline {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  counter-reset: roadmap;
+}
+.roadmap-timeline li {
+  position: relative;
+  padding: 24px 0 24px 48px;
+  border-left: 3px solid var(--accent-color);
+  margin-bottom: 0;
+  background: color-mix(in srgb, var(--surface-color), transparent 90%);
+  border-radius: 8px;
+  margin-bottom: 18px;
+  min-height: 60px;
+}
+.roadmap-timeline li:last-child {
+  margin-bottom: 0;
+}
+.roadmap-step {
+  position: absolute;
+  left: -38px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  font-weight: 700;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border: 2px solid #fff;
+}
+.roadmap-desc {
+  font-size: 1.08rem;
+  color: var(--default-color);
+  margin-left: 8px;
+  display: inline-block;
+  vertical-align: middle;
+}
+@media (max-width: 575px) {
+  .roadmap-timeline li {
+    padding-left: 56px;
+    font-size: 0.98rem;
+  }
+  .roadmap-step {
+    width: 30px;
+    height: 30px;
+    font-size: 0.95rem;
+    left: -32px;
+  }
+}
+
+.roadmap-box {
+  background: color-mix(in srgb, var(--surface-color), transparent 90%);
+  border-left: 5px solid var(--accent-color);
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  padding: 18px 20px 12px 20px;
+  margin-bottom: 18px;
+}
+.roadmap-box h5 {
+  color: var(--accent-color);
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.roadmap-box ul {
+  padding-left: 18px;
+  margin-bottom: 0;
+}
+.roadmap-box ul li {
+  color: var(--default-color);
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+@media (max-width: 767px) {
+  .roadmap-box {
+    padding: 14px 10px 10px 14px;
+  }
+}
+
+/*--------------------------------------------------------------
+# covered-topic-box cards
+--------------------------------------------------------------*/
+.covered-topic-box {
+  background: color-mix(in srgb, var(--surface-color), transparent 90%);
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  padding: 24px 16px 18px 16px;
+  transition: box-shadow 0.2s, transform 0.2s;
+  min-height: 210px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.covered-topic-box:hover {
+  box-shadow: 0 6px 32px rgba(0,0,0,0.13);
+  transform: translateY(-4px) scale(1.03);
+}
+.covered-topic-box h5 {
+  color: var(--heading-color);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0.8rem 0 0.5rem 0;
+}
+.covered-topic-box p {
+  color: var(--default-color);
+  font-size: 0.98rem;
+  margin-bottom: 0;
+}
+
+.section-card {
+  background: var(--section-gradient-1);
+  border-radius: 20px;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.13);
+  border: 1.5px solid #23262f;
+  margin: 40px 0;
+  padding: 48px 0;
+}
+
+.section-card:nth-of-type(even) {
+  background: var(--section-gradient-2);
+}
+
+/* About feature cards */
+.about-feature-card {
+  transition: box-shadow 0.2s, transform 0.2s;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  border: 1px solid rgba(76,175,80,0.08);
+  background: rgba(255,255,255,0.03);
+  border-radius: 14px;
+}
+.about-feature-card:hover {
+  box-shadow: 0 8px 32px rgba(76,175,80,0.13);
+  transform: translateY(-4px) scale(1.03);
+  border-color: var(--accent-color);
+}
+
+/*--------------------------------------------------------------
+# Tab Navigation Styles
+--------------------------------------------------------------*/
+.tab-btn {
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 0;
+  padding: 38px 0;
+  background: transparent;
+  color: var(--heading-color);
+  border: 3px solid rgba(224,224,224,0.18);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  outline: none;
+  box-shadow: none;
+  margin-bottom: 0;
+  letter-spacing: 1px;
+  width: 100%;
+  min-height: 110px;
+}
+.tab-btn.active,
+.tab-btn:focus,
+.tab-btn:hover {
+  background: rgba(76,175,80,0.08);
+  color: var(--accent-color);
+  box-shadow: 0 4px 18px rgba(76,175,80,0.08);
+  outline: none;
+}
+
+/* Custom corners and borders for 2x2 grid look */
+.grid-btn-top-left {
+  border-top-left-radius: 32px;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+}
+.grid-btn-top-right {
+  border-top-right-radius: 32px;
+  border-left: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+}
+.grid-btn-bottom-left {
+  border-bottom-left-radius: 32px;
+  border-right: 6px solid transparent;
+  border-top: 6px solid transparent;
+}
+.grid-btn-bottom-right {
+  border-bottom-right-radius: 32px;
+  border-left: 6px solid transparent;
+  border-top: 6px solid transparent;
+}
+
+@media (max-width: 767px) {
+  .tab-btn {
+    font-size: 1.1rem;
+    padding: 18px 0;
+    min-height: 70px;
+  }
+  .row.g-0 > .col-6 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+/*--------------------------------------------------------------
+# Section Backgrounds
+--------------------------------------------------------------*/
+.section,
+section,
+.section-card,
+.about-feature-card,
+.covered-topic-box,
+.stats-item,
+.service-item,
+.contact-cta,
+.info-item {
+  background: rgba(30, 32, 40, 0.60) !important;
+  /* Optional: add a subtle border or shadow for readability */
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  border-radius: 18px;
+  /* ...existing code... */
+}
+
+.about-block {
+  background: rgba(30,32,40,0.75);
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+  border: 1.5px solid rgba(76,175,80,0.10);
+  transition: box-shadow 0.2s, transform 0.2s, border 0.2s;
+  cursor: pointer;
+}
+.about-block:hover {
+  box-shadow: 0 8px 32px rgba(76,175,80,0.18);
+  border: 1.5px solid var(--accent-color);
+  transform: translateY(-6px) scale(1.03);
+}
+.about-icon {
+  font-size: 2.5rem;
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+  display: block;
+}
+.about-title {
+  color: var(--heading-color);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  font-size: 1.18rem;
+  letter-spacing: 0.5px;
+}
+.about-desc {
+  color: var(--default-color);
+  font-size: 1rem;
+  margin-bottom: 0;
 }
