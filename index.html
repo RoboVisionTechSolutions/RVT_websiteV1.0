@@ -34,407 +34,231 @@
 
     <header id="header" class="header d-flex align-items-center sticky-top">
         <div class="container-fluid container-xl position-relative d-flex align-items-center">
-
             <a href="index.html" class="logo d-flex align-items-center me-auto">
                 <img src="assets/img/logo.png" alt="" style="width: 100px; height: auto;">
                 <h1 class="sitename">RVTLabs</h1>
             </a>
-
             <nav id="navmenu" class="navmenu">
                 <ul>
                     <li><a href="#hero" class="active">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
-                    <!-- <li><a href="#portfolio">Portfolio</a></li> -->
-                    <!-- <li><a href="#team">Team</a></li> -->
-                    <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li> -->
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
-
             <a class="btn-getstarted" 
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdZz49dnSxc2PEufb7UdDtOK8sKRtUqwM-eQ52cpZvETHwRdw/viewform?usp=dialog" 
-            target="_blank" 
-            rel="noopener noreferrer">
-            Start Your Robotics Journey
-         </a>
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdZz49dnSxc2PEufb7UdDtOK8sKRtUqwM-eQ52cpZvETHwRdw/viewform?usp=dialog" 
+                target="_blank" 
+                rel="noopener noreferrer">
+                Start Your Robotics Journey
+            </a>
         </div>
     </header>
 
     <main class="main">
 
-        <section id="hero" class="hero section dark-background">
+  <!-- Tab Navigation as 2x2 Grid with new button names -->
+  <div class="container my-5" style="max-width: 420px; margin: 0 auto;">
+    <div class="row justify-content-center g-0">
+      <div class="col-6 d-flex flex-column">
+        <button class="tab-btn btn w-100 py-4 fs-4 grid-btn-top-left" data-tab="about" id="tab-about">
+          Why RVTLabs
+        </button>
+        <button class="tab-btn btn w-100 py-4 fs-4 grid-btn-bottom-left" data-tab="services" id="tab-services">
+          Offering
+        </button>
+      </div>
+      <div class="col-6 d-flex flex-column">
+        <button class="tab-btn btn w-100 py-4 fs-4 grid-btn-top-right" data-tab="covered" id="tab-covered">
+          Skills You’ll Build
+        </button>
+        <button class="tab-btn btn w-100 py-4 fs-4 grid-btn-bottom-right" data-tab="contact" id="tab-contact">
+          Let's Talk
+        </button>
+      </div>
+    </div>
+  </div>
 
-            <img src="assets/img/coverimage.jpg" alt="" data-aos="fade-in"`>
-
-            <div class="container text-center" data-aos="fade-up" data-aos-delay="100">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <h2>RVTLabs</h2>
-                        <p>At RVTLabs, we help students and startups bring their projects to life with
-                            precision and efficiency. Our expert consulting and support ensure your innovations succeed
-                            at every stage.</p>
-                        <a href="#about" class="btn-get-started">Get Started</a>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-        <section id="about" class="about section">
-
-            <div class="container">
-
-                <div class="row gy-4">
-
-                    <div class="col-lg-5 position-relative" data-aos="fade-up" data-aos-delay="200">
-                        <img src="assets/img/about.jpg" class="glightbox pulsating-play-btn" alt="RVTLabs">
-                        <a href="https://www.youtube.com/watch?v=-yDW1FxBUTk" class="glightbox pulsating-play-btn"></a>
-                    </div>
-
-                    <div class="col-lg-7 content" data-aos="fade-up" data-aos-delay="100">
-                        <h3>About Us</h3>
-                        <p>
-                            At RVTLabs, we are at the forefront of innovation in robotics and
-                            perception technologies. Our mission is to deliver cutting-edge solutions tailored to meet
-                            your technological needs and push the boundaries of what’s possible in robotics.
-                        </p>
-                        <ul>
-                            <li>
-                                <i class="bi bi-diagram-3"></i>
-                                <div>
-                                    <h5>Customized Robotics Software Stacks</h5>
-                                    <p>We create bespoke robotics software solutions using ROS and ROS2 to address your
-                                        unique challenges and enhance your robotic systems capabilities.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="bi bi-eye"></i>
-                                <div>
-                                    <h5>Advanced Perception Technologies</h5>
-                                    <p>Our perception solutions enable robots to interact intelligently with their
-                                        environment, improving their decision-making and operational efficiency.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="bi bi-mortarboard"></i>
-                                <div>
-                                    <h5>Consultations for Student Projects</h5>
-                                    <p>We offer expert guidance for students working on ROS and robotics projects from
-                                        scratch, providing support and insights to ensure academic success.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="bi bi-laptop"></i>
-                                <div>
-                                    <h5>Website & Web Application Development</h5>
-                                    <p>We create custom websites and web applications tailored to your business needs,
-                                        ensuring responsive design and seamless user experience.</p>
-                                </div>
-                            </li>
-                        </ul>
-                        <!-- <p>
-                            We are dedicated to advancing the field of robotics with tailored solutions and expert
-                            support, ensuring that each project achieves its highest potential. Join us in shaping the
-                            future of robotics and perception technologies.
-                        </p> -->
-                    </div>
-                    
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- Stats Section -->
-        <!-- <section id="stats" class="stats section">
-
-          <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-              <div class="row gy-4">
-
-                  <div class="col-lg-3 col-md-6">
-                      <div class="stats-item text-center w-100 h-100">
-                          <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
-                          <p>Clients</p>
-                      </div>
-                  </div>
-
-                  <div class="col-lg-3 col-md-6">
-                      <div class="stats-item text-center w-100 h-100">
-                          <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
-                          <p>Projects</p>
-                      </div>
-                  </div>
-
-                  <div class="col-lg-3 col-md-6">
-                      <div class="stats-item text-center w-100 h-100">
-                          <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
-                          <p>Team</p>
-                      </div>
-                  </div>
-
-              </div>
-
+  <!-- Tab Sections (all hidden by default) -->
+  <section id="about" class="about section section-card tab-section" style="display:none;">
+  <div class="container">
+    <div class="section-title text-center mb-4" data-aos="fade-up">
+      <h2>About Us</h2>
+      <p style="color: var(--default-color); font-size: 1.13rem; font-weight: 500; max-width: 700px; margin: 0 auto;">
+        Empowering the Next Generation of Robotics Developers
+      </p>
+    </div>
+    <div class="row gx-4 gy-4 justify-content-center">
+      <div class="col-md-6 col-lg-4">
+        <div class="about-block h-100 p-4 text-center">
+          <i class="bi bi-code-slash about-icon"></i>
+          <h5 class="about-title">Hands-On Learning</h5>
+          <p class="about-desc">Project-driven learning paths using C/C++, Python, Linux, ROS, and ROS2 — build real robots from scratch.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="about-block h-100 p-4 text-center">
+          <i class="bi bi-braces about-icon"></i>
+          <h5 class="about-title">Beginner-Friendly Curriculum</h5>
+          <p class="about-desc">No prior experience? No problem. Tutorials, simulations, and exercises crafted for absolute beginners.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="about-block h-100 p-4 text-center">
+          <i class="bi bi-cpu about-icon"></i>
+          <h5 class="about-title">Robotics Specializations</h5>
+          <p class="about-desc">Advance into SLAM, navigation, computer vision, and ROS2-based autonomous systems.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="about-block h-100 p-4 text-center">
+          <i class="bi bi-people about-icon"></i>
+          <h5 class="about-title">Community & Mentorship</h5>
+          <p class="about-desc">Get support through mentorship, community groups, and Q&A sessions while working on your projects.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <section id="services" class="services section section-card tab-section" style="display:none;">
+    <div class="container">
+      <div class="section-title text-center mb-4" data-aos="fade-up">
+        <h2>Our Offerings</h2>
+        <div><span>Explore</span> <span class="description-title">What We Teach</span></div>
+      </div>
+      <div class="row gy-4 gx-4">
+        <div class="col-lg-3 col-md-6 service-item d-flex flex-column align-items-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="icon mb-3"><i class="bi bi-journal-code"></i></div>
+          <h4 class="title text-center"><a href="#" class="stretched-link">Robotics Education</a></h4>
+          <p class="description text-center">A structured path from beginner to robotics developer — including C, C++, Python, Linux, ROS/ROS2, and beyond.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 service-item d-flex flex-column align-items-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="icon mb-3"><i class="bi bi-sliders"></i></div>
+          <h4 class="title text-center"><a href="#" class="stretched-link">Hands-on SLAM & Navigation</a></h4>
+          <p class="description text-center">Learn Simultaneous Localization and Mapping, robot navigation, path planning, and localization using real-world robotics tools.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 service-item d-flex flex-column align-items-center" data-aos="fade-up" data-aos-delay="300">
+          <div class="icon mb-3"><i class="bi bi-camera-video"></i></div>
+          <h4 class="title text-center"><a href="#" class="stretched-link">Computer Vision with OpenCV</a></h4>
+          <p class="description text-center">Train your robots to see. We teach you how to use cameras, OpenCV, and vision-based perception systems.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 service-item d-flex flex-column align-items-center" data-aos="fade-up" data-aos-delay="400">
+          <div class="icon mb-3"><i class="bi bi-mortarboard"></i></div>
+          <h4 class="title text-center"><a href="#" class="stretched-link">Project-Based Learning & Mentorship</a></h4>
+          <p class="description text-center">Join a guided path with real projects and expert mentorship. Perfect for college students, self-learners, and startup engineers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="covered" class="section section-card tab-section" style="display:none;">
+    <div class="container section-title text-center" data-aos="fade-up">
+      <h2>We are covered on</h2>
+      <p>Everything you need to become a robotics developer, from the basics to advanced topics</p>
+    </div>
+    <div class="container">
+      <div class="row gy-4 justify-content-center">
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="covered-topic-box text-center">
+            <i class="bi bi-code-slash" style="font-size:2rem;color:var(--accent-color);"></i>
+            <h5>C, C++ & Python Programming</h5>
+            <p>Core languages for embedded systems, robotics control, and rapid prototyping.</p>
           </div>
-
-      </section> -->
-
-        <!-- Services Section -->
-        <section id="services" class="services section">
-            <div class="container section-title" data-aos="fade-up">
-                <h2>Services</h2>
-                <div><span>Check Our</span> <span class="description-title">Services</span></div>
-            </div>
-
-            <div class="container">
-                <div class="row gy-4">
-                    <div class="col-lg-3 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-                        <div class="icon flex-shrink-0"><i class="bi bi-gear"></i></div>
-                        <div>
-                            <h4 class="title"><a href="#" class="stretched-link">Customized Robotics Software Stacks</a>
-                            </h4>
-                            <p class="description">We develop tailor-made robotics software stacks using ROS and ROS2,
-                                designed to meet your specific requirements and optimize your robotic systems'
-                                performance.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-                        <div class="icon flex-shrink-0"><i class="bi bi-eye"></i></div>
-                        <div>
-                            <h4 class="title"><a href="#" class="stretched-link">Perception Solutions</a></h4>
-                            <p class="description">Our advanced perception technologies provide robots with the ability
-                                to understand and interact with their environment, ensuring seamless and intelligent
-                                operations.</p>
-                        </div>
-                    </div>
-                    <!-- Service Item 3: Robotics System Integration -->
-                    <!-- <div class="col-lg-3 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                    <div class="icon flex-shrink-0"><i class="bi bi-puzzle"></i></div>
-                    <div>
-                        <h4 class="title"><a href="#" class="stretched-link">Robotics System Integration</a></h4>
-                        <p class="description">We offer comprehensive robotics system integration services, bringing together hardware and software components to create fully functional and optimized robotic solutions.</p>
-                    </div> -->
-                    <!-- </div> -->
-                    <div class="col-lg-3 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
-                        <div class="icon flex-shrink-0"><i class="bi bi-laptop"></i></div>
-                        <div>
-                            <h4 class="title"><a href="#" class="stretched-link">Website & Web Application
-                                    Development</a></h4>
-                            <p class="description">We create custom websites and web applications tailored to your
-                                business needs, ensuring responsive design and seamless user experience.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                        <div class="icon flex-shrink-0"><i class="bi bi-mortarboard"></i></div>
-                        <div>
-                            <h4 class="title"><a href="#" class="stretched-link">Student Project Consultations</a></h4>
-                            <p class="description">We provide expert consultations for students on ROS and building
-                                robotics projects from scratch, guiding you through every step of your academic journey.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="contact section">
-            <div class="container section-title" data-aos="fade-up">
-              <h2>Contact</h2>
-              <div><span>Contact Us</span></div>
-            </div>
-          
-            <div class="container" data-aos="fade-up" data-aos-delay="100">
-              <div class="row gy-4">
-                <!-- Contact Info -->
-                <div class="col-lg-4">
-                  <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                    <i class="bi bi-geo-alt flex-shrink-0"></i>
-                    <div>
-                      <h3>Address</h3>
-                      <p>Ground floor, Sr.no.34/2/1, Ambai Dara, Dhayarigaon Pune 411041</p>
-                    </div>
-                  </div>
-          
-                  <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                    <i class="bi bi-telephone flex-shrink-0"></i>
-                    <div>
-                      <h3>Call Us</h3>
-                      <p>+91 9657335122</p>
-                    </div>
-                  </div>
-          
-                  <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
-                    <i class="bi bi-envelope flex-shrink-0"></i>
-                    <div>
-                      <h3>Email Us</h3>
-                      <p><a href="mailto:info@robovisiontech.com">rvtlabs@gmail.com</a></p>
-                    </div>
-                  </div>
-                </div>
-          
-                <!-- Contact CTA -->
-                <div class="col-lg-8">
-                  <div class="contact-cta" data-aos="fade-up" data-aos-delay="600">
-                    <p>If you have any inquiries, feel free to reach out via email or fill out our quick contact form.</p>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdZz49dnSxc2PEufb7UdDtOK8sKRtUqwM-eQ52cpZvETHwRdw/viewform?usp=dialog" 
-                       target="_blank" 
-                       class="custom-btn">
-                      ✍️ Fill Out Contact Form
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-  <!-- 👇 Add the custom styles here -->
-  <style>
-    .custom-btn {
-      display: inline-block;
-      padding: 12px 24px;
-      background: linear-gradient(135deg, #1d8cf8, #3358f4);
-      color: #fff;
-      font-size: 16px;
-      font-weight: 600;
-      border: none;
-      border-radius: 8px;
-      text-decoration: none;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-      transition: all 0.3s ease;
-      margin-top: 15px;
-    }
-
-    .custom-btn:hover {
-      background: linear-gradient(135deg, #3358f4, #1d8cf8);
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-    }
-
-    .contact-cta p {
-      font-size: 16px;
-      margin-bottom: 10px;
-    }
-  </style>
-<!--                     <div class="col-lg-8">
-                        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
-                            data-aos-delay="200">
-                            <div class="row gy-4">
-
-                                <div class="col-md-6">
-                                    <input type="text" name="name" class="form-control" placeholder="Your Name"
-                                        required="">
-                                </div>
-
-                                <div class="col-md-6 ">
-                                    <input type="email" class="form-control" name="email" placeholder="Your Email"
-                                        required="">
-                                </div>
-
-                                <div class="col-md-12">
-                                    <input type="text" class="form-control" name="subject" placeholder="Subject"
-                                        required="">
-                                </div>
-
-                                <div class="col-md-12">
-                                    <textarea class="form-control" name="message" rows="6" placeholder="Message"
-                                        required=""></textarea>
-                                </div>
-
-                                <div class="col-md-12 text-center">
-                                    <div class="loading">Loading</div>
-                                    <div class="error-message"></div>
-                                    <div class="sent-message">Your message has been sent. Thank you!</div>
-                                    <button type="submit">Send Message</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div> -->
-                </div>
-            </div>
-        </section>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="covered-topic-box text-center">
+            <i class="bi bi-terminal" style="font-size:2rem;color:var(--accent-color);"></i>
+            <h5>Linux & Command Line</h5>
+            <p>Essential skills for robotics development and automation.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="covered-topic-box text-center">
+            <i class="bi bi-diagram-3" style="font-size:2rem;color:var(--accent-color);"></i>
+            <h5>ROS & ROS2</h5>
+            <p>Industry-standard frameworks for robot software development.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="covered-topic-box text-center">
+            <i class="bi bi-robot" style="font-size:2rem;color:var(--accent-color);"></i>
+            <h5>Simulation Tools</h5>
+            <p>Gazebo, RViz, and virtual environments for safe development and testing.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="covered-topic-box text-center">
+            <i class="bi bi-camera-video" style="font-size:2rem;color:var(--accent-color);"></i>
+            <h5>Computer Vision with ROS</h5>
+            <p>OpenCV, camera integration, and vision-based perception for robots.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="covered-topic-box text-center">
+            <i class="bi bi-cast" style="font-size:2rem;color:var(--accent-color);"></i>
+            <h5>Sensor Integration & Real Robot Hands-on</h5>
+            <p>Work with real sensors, actuators, and hardware to bring your robots to life.</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4">
+          <div class="covered-topic-box text-center">
+            <i class="bi bi-people" style="font-size:2rem;color:var(--accent-color);"></i>
+            <h5>Mentorship & Community</h5>
+            <p>Guidance, Q&A, and peer support throughout your journey.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="contact section section-card tab-section" style="display:none;">
+  <div class="container">
+    <div class="section-title text-center mb-3" data-aos="fade-up">
+      <h2>Let's Talk</h2>
+      <p style="color: var(--default-color); font-size: 1.1rem;">
+        Reach out for queries, collaborations, or guidance.
+      </p>
+    </div>
+    <div class="row justify-content-center align-items-stretch">
+      <div class="col-lg-5 d-flex flex-column justify-content-center">
+        <div class="info-item d-flex align-items-start mb-3" data-aos="fade-up" data-aos-delay="100" style="background:rgba(255,255,255,0.03); border-radius:12px; padding:14px;">
+          <i class="bi bi-geo-alt flex-shrink-0" style="font-size:2rem; color:var(--accent-color); margin-right:14px;"></i>
+          <div>
+            <h5 style="color:var(--heading-color); font-weight:600;">Address</h5>
+            <p style="color:var(--default-color); margin-bottom:0;">Ground floor, Sr.no.34/2/1,<br>Ambai Dara, Dhayarigaon<br>Pune 411041</p>
+          </div>
+        </div>
+        <div class="info-item d-flex align-items-start mb-3" data-aos="fade-up" data-aos-delay="150" style="background:rgba(255,255,255,0.03); border-radius:12px; padding:14px;">
+          <i class="bi bi-telephone flex-shrink-0" style="font-size:2rem; color:var(--accent-color); margin-right:14px;"></i>
+          <div>
+            <h5 style="color:var(--heading-color); font-weight:600;">Call Us</h5>
+            <p style="color:var(--default-color); margin-bottom:0;">+91 9657335122</p>
+          </div>
+        </div>
+        <div class="info-item d-flex align-items-start" data-aos="fade-up" data-aos-delay="200" style="background:rgba(255,255,255,0.03); border-radius:12px; padding:14px;">
+          <i class="bi bi-envelope flex-shrink-0" style="font-size:2rem; color:var(--accent-color); margin-right:14px;"></i>
+          <div>
+            <h5 style="color:var(--heading-color); font-weight:600;">Email Us</h5>
+            <p style="color:var(--default-color); margin-bottom:0;"><a href="mailto:rvtlabs@gmail.com" style="color:var(--accent-color);">rvtlabs@gmail.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7 d-flex align-items-center">
+        <div class="contact-cta w-100" data-aos="fade-up" data-aos-delay="250" style="background:rgba(255,255,255,0.02); border-radius:14px; padding:18px;">
+          <h5 style="color:var(--heading-color); font-weight:700; margin-bottom:0.8rem;">Quick Contact Form</h5>
+          <p style="color:var(--default-color); margin-bottom:1rem;">Fill out our quick form and we’ll get back to you soon.</p>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdZz49dnSxc2PEufb7UdDtOK8sKRtUqwM-eQ52cpZvETHwRdw/viewform?usp=dialog" 
+             target="_blank" 
+             class="custom-btn btn btn-success"
+             style="font-size:1.1rem; padding:12px 30px; border-radius:30px;">
+            ✍️ Fill Out Contact Form
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
     </main>
-
-    <footer id="footer" class="footer dark-background">
-
-        <div class="container footer-top">
-            <div class="row gy-4">
-                <div class="col-lg-5 col-md-12 footer-about">
-                    <a href="index.html" class="logo d-flex align-items-center">
-                        <span class="sitename">RVTLabs</span>
-                    </a>
-                    <p>At RVTLabs, we drive innovation by delivering cutting-edge robotics and
-                        perception technologies. We partner with students and startups, offering expert support and
-                        solutions to turn their visionary projects into reality.</p>
-                    <div class="social-links d-flex mt-4">
-                        <a href="https://www.youtube.com/@RoboVisionTechSolutions" target="_blank" class="youtube"><i
-                                class="bi bi-youtube"></i></a>
-                        <a href="https://www.facebook.com/profile.php?id=61564490086095&mibextid=ZbWKwL" target="_blank"
-                            class="facebook"><i class="bi bi-facebook"></i></a>
-                        <a href="https://www.linkedin.com/company/rvt-labs/" target="_blank"
-                            class="linkedin"><i class="bi bi-linkedin"></i></a>
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-6 footer-links">
-                    <h4>Useful Links</h4>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Terms of service</a></li>
-                        <li><a href="#">Privacy policy</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-2 col-6 footer-links">
-                    <h4>Our Services</h4>
-                    <ul>
-                        <li><a href="#">ROS1 & ROS2 Solutions</a></li>
-                        <li><a href="#">Advanced Perception Technologies</a></li>
-                        <li><a href="#">Project Consultations for Students</a></li>
-                        <li><a href="#">Website & Web Application Development</a></li>
-                    </ul>
-                </div>
-
-
-                <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-                    <h4>Contact Us</h4>
-                    <p>Ground floor, Sr.no.34/2/1, </p>
-                    <p>Ambai Dara, Dhayarigaon </p>
-                    <p>Pune 411041</p>
-                    <p class="mt-4"><strong>Phone:</strong> <span>+91 9657335122</span></p>
-                    <p><strong>Email:</strong> <span>rvtlabs@gmail.com</span></p>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="container copyright text-center mt-4">
-            <p>© <span>Copyright</span> <strong class="px-1 sitename">RVTLabs</strong> <span>All
-                    Rights Reserved</span></p>
-            <div class="credits">
-                Designed by <a href="https://robovisiontechsolutions.com/">RVTLabs</a>
-            </div>
-        </div>
-
-    </footer>
 
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>
@@ -451,6 +275,48 @@
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
     <script src="assets/js/main.js"></script>
+    <script>
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    // Hide all tab sections
+    document.querySelectorAll('.tab-section').forEach(sec => {
+      if (sec.id === this.dataset.tab) {
+        sec.style.display = 'block';
+      } else {
+        sec.style.display = 'none';
+      }
+    });
+    // Enable all buttons
+    document.querySelectorAll('.tab-btn').forEach(b => {
+      b.classList.remove('active');
+      b.disabled = false;
+    });
+    // Disable the clicked button and set active
+    this.classList.add('active');
+    this.disabled = true;
+    // Scroll to the section for context
+    const section = document.getElementById(this.dataset.tab);
+    if (section) {
+      setTimeout(() => {
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 50);
+    }
+  });
+});
+// On load, hide all sections and enable all buttons
+document.querySelectorAll('.tab-section').forEach(sec => sec.style.display = 'none');
+document.querySelectorAll('.tab-btn').forEach(b => {
+  b.classList.remove('active');
+  b.disabled = false;
+});
+</script>
+
+    <!-- Copyright Only Footer -->
+  <!-- <footer id="footer" class="footer dark-background">
+    <div class="container copyright text-center mt-4">
+      <p>© Copyright <strong class="px-1 sitename">RVTLabs</strong> All Rights Reserved</p>
+    </div>
+  </footer> -->
 
 </body>
 
