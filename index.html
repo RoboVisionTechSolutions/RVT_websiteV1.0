@@ -32,7 +32,7 @@
 
 <body class="index-page">
 
-    <header id="header" class="header d-flex align-items-center sticky-top">
+    <header id="header" class="header d-flex align-items-center sticky-top" style="background: rgba(30, 32, 40, 0.15) !important; backdrop-filter: blur(10px);">
         <div class="container-fluid container-xl position-relative d-flex align-items-center">
             <a href="index.html" class="logo d-flex align-items-center me-auto">
                 <img src="assets/img/logo.png" alt="" style="width: 100px; height: auto;">
@@ -40,10 +40,10 @@
             </a>
             <nav id="navmenu" class="navmenu">
                 <ul>
-                    <li><a href="#hero" class="active">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#contact-us">Contact Us</a></li>
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
@@ -58,7 +58,576 @@
 
     <main class="main">
 
-  <!-- Tab Navigation as 2x2 Grid with new button names -->
+  <!-- Home Section -->
+  <section id="home" class="hero section dark-background" style="background: rgba(30, 32, 40, 0.15) !important;">
+    <div class="container text-center" data-aos="fade-up" style="background: rgba(255,255,255,0.01); border-radius: 20px; padding: 60px 40px;">
+      <div class="hero-badge mb-3" style="display: inline-block; background: rgba(0,255,127,0.1); border: 1px solid rgba(0,255,127,0.3); border-radius: 30px; padding: 8px 20px;">
+        <span style="color: #00ff7f; font-size: 0.9rem; font-weight: 600;">🎯 Industry-Focused Robotics Training</span>
+      </div>
+      <h1 style="color: var(--heading-color); font-size: 3.5rem; font-weight: bold; margin-bottom: 1rem; line-height: 1.2;">
+        Transform Into a <span style="color: #00ff7f;">Robotics Developer</span><br>
+        <span style="font-size: 2.8rem; color: var(--default-color);">with RVTLabs</span>
+      </h1>
+      <p style="color: var(--default-color); font-size: 1.3rem; margin-bottom: 2rem; max-width: 900px; margin-left: auto; margin-right: auto; line-height: 1.6;">
+        From <strong>zero programming experience</strong> to building <strong>autonomous robots</strong> - Master C/C++, Python, Linux, ROS2, SLAM, Computer Vision & more through real-world projects with expert mentorship.
+      </p>
+      
+      <!-- Key highlights -->
+      <div class="row justify-content-center mb-4" style="max-width: 800px; margin: 0 auto;">
+        <div class="col-md-4 mb-2">
+          <div style="background: rgba(255,255,255,0.05); border-radius: 15px; padding: 15px; border: 1px solid rgba(255,255,255,0.1);">
+            <i class="bi bi-trophy-fill" style="color: #ffd700; font-size: 1.5rem;"></i><br>
+            <span style="color: var(--default-color); font-size: 0.95rem; font-weight: 500;">100% Project-Based</span>
+          </div>
+        </div>
+        <div class="col-md-4 mb-2">
+          <div style="background: rgba(255,255,255,0.05); border-radius: 15px; padding: 15px; border: 1px solid rgba(255,255,255,0.1);">
+            <i class="bi bi-people-fill" style="color: #00bfff; font-size: 1.5rem;"></i><br>
+            <span style="color: var(--default-color); font-size: 0.95rem; font-weight: 500;">1-on-1 Mentorship</span>
+          </div>
+        </div>
+        <div class="col-md-4 mb-2">
+          <div style="background: rgba(255,255,255,0.05); border-radius: 15px; padding: 15px; border: 1px solid rgba(255,255,255,0.1);">
+            <i class="bi bi-robot" style="color: #ff6b35; font-size: 1.5rem;"></i><br>
+            <span style="color: var(--default-color); font-size: 0.95rem; font-weight: 500;">Real Robot Hardware</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-buttons">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdZz49dnSxc2PEufb7UdDtOK8sKRtUqwM-eQ52cpZvETHwRdw/viewform?usp=dialog" 
+           target="_blank" 
+           class="btn btn-success btn-lg me-3"
+           style="font-size: 1.2rem; padding: 15px 40px; border-radius: 50px; margin-top: 1rem; box-shadow: 0 4px 15px rgba(0,255,127,0.3);">
+          🚀 Start Your Journey - Free Consultation
+        </a>
+        <a href="#courses" 
+           class="btn btn-outline-light btn-lg"
+           style="font-size: 1.1rem; padding: 15px 30px; border-radius: 50px; margin-top: 1rem; border: 2px solid rgba(255,255,255,0.3);">
+          📚 Explore Courses
+        </a>
+      </div>
+      
+      <div class="mt-4" style="font-size: 0.9rem; color: rgba(255,255,255,0.7);">
+        <i class="bi bi-check-circle-fill" style="color: #00ff7f;"></i> No prior experience required
+        <span class="mx-3">|</span>
+        <i class="bi bi-check-circle-fill" style="color: #00ff7f;"></i> Industry-standard tools
+        <span class="mx-3">|</span>
+        <i class="bi bi-check-circle-fill" style="color: #00ff7f;"></i> Job-ready skills
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about-us" class="about section section-card" style="background: linear-gradient(135deg, rgba(30, 32, 40, 0.3), rgba(20, 25, 35, 0.25)) !important; position: relative; overflow: hidden;">
+    
+    <!-- Background decoration -->
+    <div style="position: absolute; top: -100px; right: -100px; width: 300px; height: 300px; background: radial-gradient(circle, rgba(0,255,127,0.03), transparent); border-radius: 50%; z-index: 0;"></div>
+    <div style="position: absolute; bottom: -150px; left: -150px; width: 400px; height: 400px; background: radial-gradient(circle, rgba(0,191,255,0.03), transparent); border-radius: 50%; z-index: 0;"></div>
+    
+    <div class="container" style="position: relative; z-index: 1;">
+      <div class="section-title text-center mb-5" data-aos="fade-up">
+        <div class="section-badge mb-3" style="display: inline-block; background: linear-gradient(135deg, rgba(0,191,255,0.15), rgba(0,255,127,0.1)); border: 2px solid rgba(0,191,255,0.3); border-radius: 30px; padding: 10px 25px; backdrop-filter: blur(10px); box-shadow: 0 8px 25px rgba(0,191,255,0.15);">
+          <span style="color: #00bfff; font-size: 0.9rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;">
+            <i class="bi bi-star-fill me-2" style="color: #00ff7f;"></i>WHY CHOOSE RVTLABS
+          </span>
+        </div>
+        <h2 style="font-size: 3.2rem; margin-bottom: 1.5rem; font-weight: 800; background: linear-gradient(135deg, #ffffff, #e0e0e0); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; line-height: 1.2;">Your Path to Robotics Mastery</h2>
+        <p style="color: rgba(255,255,255,0.85); font-size: 1.3rem; font-weight: 400; max-width: 850px; margin: 0 auto; line-height: 1.7; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">
+          We don't just teach robotics - we transform complete beginners into industry-ready robotics developers through our proven methodology.
+        </p>
+      </div>
+
+      <div class="row gx-4 gy-4 justify-content-center">
+        <div class="col-md-6 col-lg-6 col-xl-6">
+          <div class="about-block h-100 p-5 text-center position-relative" data-aos="fade-up" data-aos-delay="100" style="background: linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02)) !important; border-radius: 20px; border: 1px solid rgba(255,255,255,0.15); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); backdrop-filter: blur(15px); box-shadow: 0 10px 40px rgba(0,0,0,0.1); overflow: hidden;">
+            <!-- Card glow effect -->
+            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, rgba(0,255,127,0.05), transparent); opacity: 0; transition: opacity 0.4s ease; pointer-events: none;"></div>
+            
+            <div class="icon-wrapper mb-4" style="background: linear-gradient(135deg, rgba(0,255,127,0.15), rgba(0,255,127,0.08)); border-radius: 25px; width: 90px; height: 90px; margin: 0 auto; display: flex; align-items: center; justify-content: center; box-shadow: 0 15px 35px rgba(0,255,127,0.2); position: relative; z-index: 2;">
+              <i class="bi bi-code-slash" style="font-size: 2.8rem; color: #00ff7f;"></i>
+            </div>
+            <h5 class="about-title" style="color: var(--heading-color); font-size: 1.5rem; margin-bottom: 1.2rem; font-weight: 700; position: relative; z-index: 2;">Hands-On Learning</h5>
+            <p class="about-desc" style="color: rgba(255,255,255,0.8); line-height: 1.7; font-size: 1.05rem; margin-bottom: 1.5rem; position: relative; z-index: 2;">Build real robots from day one using C/C++, Python, Linux, ROS2. No theory-only lessons - every concept is applied immediately through practical projects.</p>
+            <div class="feature-badge" style="background: linear-gradient(135deg, rgba(0,255,127,0.15), rgba(0,255,127,0.08)); border-radius: 20px; padding: 12px 20px; display: inline-block; border: 1px solid rgba(0,255,127,0.3); position: relative; z-index: 2;">
+              <small style="color: #00ff7f; font-weight: 700; font-size: 0.9rem;">
+                <i class="bi bi-check-circle-fill me-2"></i>Real Hardware Included
+              </small>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-6 col-xl-6">
+          <div class="about-block h-100 p-5 text-center position-relative" data-aos="fade-up" data-aos-delay="200" style="background: linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02)) !important; border-radius: 20px; border: 1px solid rgba(255,255,255,0.15); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); backdrop-filter: blur(15px); box-shadow: 0 10px 40px rgba(0,0,0,0.1); overflow: hidden;">
+            <!-- Card glow effect -->
+            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, rgba(0,191,255,0.05), transparent); opacity: 0; transition: opacity 0.4s ease; pointer-events: none;"></div>
+            
+            <div class="icon-wrapper mb-4" style="background: linear-gradient(135deg, rgba(0,191,255,0.15), rgba(0,191,255,0.08)); border-radius: 25px; width: 90px; height: 90px; margin: 0 auto; display: flex; align-items: center; justify-content: center; box-shadow: 0 15px 35px rgba(0,191,255,0.2); position: relative; z-index: 2;">
+              <i class="bi bi-person-check" style="font-size: 2.8rem; color: #00bfff;"></i>
+            </div>
+            <h5 class="about-title" style="color: var(--heading-color); font-size: 1.5rem; margin-bottom: 1.2rem; font-weight: 700; position: relative; z-index: 2;">Zero to Hero Path</h5>
+            <p class="about-desc" style="color: rgba(255,255,255,0.8); line-height: 1.7; font-size: 1.05rem; margin-bottom: 1.5rem; position: relative; z-index: 2;">Complete beginner? Perfect! Our structured curriculum takes you from basic programming to advanced robotics concepts with personalized pacing.</p>
+            <div class="feature-badge" style="background: linear-gradient(135deg, rgba(0,191,255,0.15), rgba(0,191,255,0.08)); border-radius: 20px; padding: 12px 20px; display: inline-block; border: 1px solid rgba(0,191,255,0.3); position: relative; z-index: 2;">
+              <small style="color: #00bfff; font-weight: 700; font-size: 0.9rem;">
+                <i class="bi bi-check-circle-fill me-2"></i>Beginner Friendly
+              </small>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-6 col-xl-6">
+          <div class="about-block h-100 p-5 text-center position-relative" data-aos="fade-up" data-aos-delay="300" style="background: linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02)) !important; border-radius: 20px; border: 1px solid rgba(255,255,255,0.15); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); backdrop-filter: blur(15px); box-shadow: 0 10px 40px rgba(0,0,0,0.1); overflow: hidden;">
+            <!-- Card glow effect -->
+            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, rgba(255,107,53,0.05), transparent); opacity: 0; transition: opacity 0.4s ease; pointer-events: none;"></div>
+            
+            <div class="icon-wrapper mb-4" style="background: linear-gradient(135deg, rgba(255,107,53,0.15), rgba(255,107,53,0.08)); border-radius: 25px; width: 90px; height: 90px; margin: 0 auto; display: flex; align-items: center; justify-content: center; box-shadow: 0 15px 35px rgba(255,107,53,0.2); position: relative; z-index: 2;">
+              <i class="bi bi-cpu" style="font-size: 2.8rem; color: #ff6b35;"></i>
+            </div>
+            <h5 class="about-title" style="color: var(--heading-color); font-size: 1.5rem; margin-bottom: 1.2rem; font-weight: 700; position: relative; z-index: 2;">Industry Specializations</h5>
+            <p class="about-desc" style="color: rgba(255,255,255,0.8); line-height: 1.7; font-size: 1.05rem; margin-bottom: 1.5rem; position: relative; z-index: 2;">Master cutting-edge technologies: SLAM, autonomous navigation, computer vision, ROS2 ecosystems - the exact skills companies are hiring for.</p>
+            <div class="feature-badge" style="background: linear-gradient(135deg, rgba(255,107,53,0.15), rgba(255,107,53,0.08)); border-radius: 20px; padding: 12px 20px; display: inline-block; border: 1px solid rgba(255,107,53,0.3); position: relative; z-index: 2;">
+              <small style="color: #ff6b35; font-weight: 700; font-size: 0.9rem;">
+                <i class="bi bi-check-circle-fill me-2"></i>Job-Ready Skills
+              </small>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-6 col-xl-6">
+          <div class="about-block h-100 p-5 text-center position-relative" data-aos="fade-up" data-aos-delay="400" style="background: linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02)) !important; border-radius: 20px; border: 1px solid rgba(255,255,255,0.15); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); backdrop-filter: blur(15px); box-shadow: 0 10px 40px rgba(0,0,0,0.1); overflow: hidden;">
+            <!-- Card glow effect -->
+            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, rgba(255,215,0,0.05), transparent); opacity: 0; transition: opacity 0.4s ease; pointer-events: none;"></div>
+            
+            <div class="icon-wrapper mb-4" style="background: linear-gradient(135deg, rgba(255,215,0,0.15), rgba(255,215,0,0.08)); border-radius: 25px; width: 90px; height: 90px; margin: 0 auto; display: flex; align-items: center; justify-content: center; box-shadow: 0 15px 35px rgba(255,215,0,0.2); position: relative; z-index: 2;">
+              <i class="bi bi-people" style="font-size: 2.8rem; color: #ffd700;"></i>
+            </div>
+            <h5 class="about-title" style="color: var(--heading-color); font-size: 1.5rem; margin-bottom: 1.2rem; font-weight: 700; position: relative; z-index: 2;">Expert Mentorship</h5>
+            <p class="about-desc" style="color: rgba(255,255,255,0.8); line-height: 1.7; font-size: 1.05rem; margin-bottom: 1.5rem; position: relative; z-index: 2;">Get personal guidance from experienced robotics engineers. Weekly 1-on-1 sessions, code reviews, career advice, and 24/7 community support.</p>
+            <div class="feature-badge" style="background: linear-gradient(135deg, rgba(255,215,0,0.15), rgba(255,215,0,0.08)); border-radius: 20px; padding: 12px 20px; display: inline-block; border: 1px solid rgba(255,215,0,0.3); position: relative; z-index: 2;">
+              <small style="color: #ffd700; font-weight: 700; font-size: 0.9rem;">
+                <i class="bi bi-check-circle-fill me-2"></i>Personal Mentor
+              </small>
+            </div>
+          </div>
+        </div>
+      </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Courses Section - After About Us -->
+  <section id="courses" class="services section section-card" style="background: rgba(30, 32, 40, 0.25) !important;">
+    <div class="container">
+      <div class="section-title text-center mb-4" data-aos="fade-up">
+        <h2>Our Courses</h2>
+        <div><span>Explore</span> <span class="description-title">What We Teach</span></div>
+      </div>
+      <div class="row gy-4 gx-4">
+        <div class="col-lg-3 col-md-6 service-item d-flex flex-column align-items-center" data-aos="fade-up" data-aos-delay="100" style="background: rgba(255,255,255,0.02) !important;">
+          <div class="icon mb-3"><i class="bi bi-journal-code"></i></div>
+          <h4 class="title text-center"><a href="#" class="stretched-link">Programming Fundamentals</a></h4>
+          <p class="description text-center">Establish a solid foundation in C/C++ and Python programming, Linux system administration, and essential robotics principles. Master the development environment and core concepts that power modern robotics.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 service-item d-flex flex-column align-items-center" data-aos="fade-up" data-aos-delay="200" style="background: rgba(255,255,255,0.02) !important;">
+          <div class="icon mb-3"><i class="bi bi-diagram-3"></i></div>
+          <h4 class="title text-center"><a href="#" class="stretched-link">ROS2 & Robot Simulation</a></h4>
+          <p class="description text-center">Master the Robot Operating System 2 (ROS2) framework, advanced simulation environments, and professional ROS development tools. Create sophisticated robot applications in industry-standard virtual environments.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 service-item d-flex flex-column align-items-center" data-aos="fade-up" data-aos-delay="300" style="background: rgba(255,255,255,0.02) !important;">
+          <div class="icon mb-3"><i class="bi bi-camera-video"></i></div>
+          <h4 class="title text-center"><a href="#" class="stretched-link">Advanced Perception & Navigation</a></h4>
+          <p class="description text-center">Implement cutting-edge SLAM algorithms, autonomous navigation systems, and computer vision solutions using OpenCV. Develop intelligent robots capable of understanding and navigating complex environments.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 service-item d-flex flex-column align-items-center" data-aos="fade-up" data-aos-delay="400" style="background: rgba(255,255,255,0.02) !important;">
+          <div class="icon mb-3"><i class="bi bi-mortarboard"></i></div>
+          <h4 class="title text-center"><a href="#" class="stretched-link">Expert Project Mentorship</a></h4>
+          <p class="description text-center">Receive personalized guidance from industry professionals as you develop real-world robotics projects. Build an impressive portfolio with hands-on mentorship and career development support.</p>
+        </div>
+      </div>
+      
+      <!-- Skills Covered - Enhanced Sliding Carousel - COMMENTED OUT -->
+      <!--
+      <div class="container section-title text-center mt-5" data-aos="fade-up">
+        <div class="section-badge mb-3" style="display: inline-block; background: linear-gradient(135deg, rgba(0,255,127,0.15), rgba(0,191,255,0.1)); border: 2px solid rgba(0,255,127,0.3); border-radius: 25px; padding: 10px 20px;">
+          <span style="color: #00ff7f; font-size: 0.85rem; font-weight: 700; letter-spacing: 1px;">
+            <i class="bi bi-gear-wide-connected me-2"></i>SKILLS MASTERY
+          </span>
+        </div>
+        <h3 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem; color: var(--heading-color); background: linear-gradient(135deg, #ffffff, #e0e0e0); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+          Skills You'll Build
+        </h3>
+        <p style="color: rgba(255,255,255,0.8); font-size: 1.2rem; max-width: 600px; margin: 0 auto;">
+          Everything you need to become a robotics developer, from the basics to advanced topics
+        </p>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- Impact Numbers Section - After Courses -->
+  <section class="stats-section py-5" style="background: linear-gradient(135deg, rgba(0,255,127,0.05), rgba(0,191,255,0.05)); border-radius: 20px; margin: 40px 0; border: 1px solid rgba(255,255,255,0.1);">
+    <div class="container">
+      <div class="text-center mb-4" data-aos="fade-up">
+        <h3 style="color: var(--heading-color); font-size: 2.2rem; margin-bottom: 1rem;">Our Impact in Numbers</h3>
+        <p style="color: var(--default-color); font-size: 1.1rem;">Building the future of robotics, one student at a time</p>
+      </div>
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="stat-item" style="background: rgba(0,255,127,0.1); border-radius: 15px; padding: 30px 20px; border: 2px solid rgba(0,255,127,0.2); transition: all 0.3s ease; position: relative; overflow: hidden;">
+            <div class="stat-icon mb-3">
+              <i class="bi bi-people-fill" style="font-size: 2.5rem; color: #00ff7f;"></i>
+            </div>
+            <div class="stat-number" style="font-size: 3.2rem; font-weight: bold; color: #00ff7f; margin-bottom: 10px;" data-target="100">0+</div>
+            <div class="stat-label" style="color: var(--default-color); font-size: 1.1rem; font-weight: 600; margin-bottom: 8px;">Students Trained</div>
+            <div class="stat-sublabel" style="color: rgba(255,255,255,0.7); font-size: 0.9rem;">From 5+ countries worldwide</div>
+            <div class="stat-decoration" style="position: absolute; top: -20px; right: -20px; width: 60px; height: 60px; background: rgba(0,255,127,0.1); border-radius: 50%; opacity: 0.5;"></div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="stat-item" style="background: rgba(0,191,255,0.1); border-radius: 15px; padding: 30px 20px; border: 2px solid rgba(0,191,255,0.2); transition: all 0.3s ease; position: relative; overflow: hidden;">
+            <div class="stat-icon mb-3">
+              <i class="bi bi-building" style="font-size: 2.5rem; color: #00bfff;"></i>
+            </div>
+            <div class="stat-number" style="font-size: 3.2rem; font-weight: bold; color: #00bfff; margin-bottom: 10px;" data-target="5">0+</div>
+            <div class="stat-label" style="color: var(--default-color); font-size: 1.1rem; font-weight: 600; margin-bottom: 8px;">Partner Colleges</div>
+            <div class="stat-sublabel" style="color: rgba(255,255,255,0.7); font-size: 0.9rem;">Active collaboration programs</div>
+            <div class="stat-decoration" style="position: absolute; top: -20px; right: -20px; width: 60px; height: 60px; background: rgba(0,191,255,0.1); border-radius: 50%; opacity: 0.5;"></div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="stat-item" style="background: rgba(255,215,0,0.1); border-radius: 15px; padding: 30px 20px; border: 2px solid rgba(255,215,0,0.2); transition: all 0.3s ease; position: relative; overflow: hidden;">
+            <div class="stat-icon mb-3">
+              <i class="bi bi-briefcase-fill" style="font-size: 2.5rem; color: #ffd700;"></i>
+            </div>
+            <div class="stat-number" style="font-size: 3.2rem; font-weight: bold; color: #ffd700; margin-bottom: 10px;" data-target="8">0+</div>
+            <div class="stat-label" style="color: var(--default-color); font-size: 1.1rem; font-weight: 600; margin-bottom: 8px;">Industry Clients</div>
+            <div class="stat-sublabel" style="color: rgba(255,255,255,0.7); font-size: 0.9rem;">Custom robotics solutions</div>
+            <div class="stat-decoration" style="position: absolute; top: -20px; right: -20px; width: 60px; height: 60px; background: rgba(255,215,0,0.1); border-radius: 50%; opacity: 0.5;"></div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="stat-item" style="background: rgba(255,107,53,0.1); border-radius: 15px; padding: 30px 20px; border: 2px solid rgba(255,107,53,0.2); transition: all 0.3s ease; position: relative; overflow: hidden;">
+            <div class="stat-icon mb-3">
+              <i class="bi bi-robot" style="font-size: 2.5rem; color: #ff6b35;"></i>
+            </div>
+            <div class="stat-number" style="font-size: 3.2rem; font-weight: bold; color: #ff6b35; margin-bottom: 10px;" data-target="50">0+</div>
+            <div class="stat-label" style="color: var(--default-color); font-size: 1.1rem; font-weight: 600; margin-bottom: 8px;">Robots Built</div>
+            <div class="stat-sublabel" style="color: rgba(255,255,255,0.7); font-size: 0.9rem;">By our students & team</div>
+            <div class="stat-decoration" style="position: absolute; top: -20px; right: -20px; width: 60px; height: 60px; background: rgba(255,107,53,0.1); border-radius: 50%; opacity: 0.5;"></div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Achievement badges - COMMENTED OUT -->
+      <!--
+      <div class="row justify-content-center mt-4">
+        <div class="col-lg-8">
+          <div class="achievement-badges text-center p-4" style="background: rgba(255,255,255,0.02); border-radius: 15px; border: 1px solid rgba(255,255,255,0.1);">
+            <div class="row align-items-center">
+              <div class="col-md-3 col-6 mb-2">
+                <div style="color: #00ff7f; font-size: 1.1rem;">🏆 <strong>Best Training</strong></div>
+                <small style="color: rgba(255,255,255,0.7);">Robotics Program 2024</small>
+              </div>
+              <div class="col-md-3 col-6 mb-2">
+                <div style="color: #00bfff; font-size: 1.1rem;">⭐ <strong>4.9/5 Rating</strong></div>
+                <small style="color: rgba(255,255,255,0.7);">Student satisfaction</small>
+              </div>
+              <div class="col-md-3 col-6 mb-2">
+                <div style="color: #ffd700; font-size: 1.1rem;">💼 <strong>85% Placement</strong></div>
+                <small style="color: rgba(255,255,255,0.7);">Success rate</small>
+              </div>
+              <div class="col-md-3 col-6 mb-2">
+                <div style="color: #ff6b35; font-size: 1.1rem;">🌟 <strong>Industry Certified</strong></div>
+                <small style="color: rgba(255,255,255,0.7);">ROS2 & OpenCV</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      -->
+    </div>
+  </section>
+
+  <!-- Testimonials Section - COMMENTED OUT FOR NOW -->
+  <!--
+  <section class="testimonials-section py-5" style="background: rgba(30, 32, 40, 0.25) !important; border-radius: 20px; margin: 40px 0;">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <div class="section-badge mb-3" style="display: inline-block; background: rgba(255,215,0,0.1); border: 1px solid rgba(255,215,0,0.3); border-radius: 25px; padding: 6px 18px;">
+          <span style="color: #ffd700; font-size: 0.85rem; font-weight: 600;">STUDENT SUCCESS STORIES</span>
+        </div>
+        <h2 style="font-size: 2.8rem; margin-bottom: 1rem; color: var(--heading-color);">What Our Students Say</h2>
+        <p style="color: var(--default-color); font-size: 1.2rem; max-width: 700px; margin: 0 auto;">Real transformations from students who started with zero robotics experience</p>
+      </div>
+      
+      <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="testimonial-card h-100" style="background: rgba(255,255,255,0.03); border-radius: 20px; padding: 30px; border: 1px solid rgba(255,255,255,0.1); position: relative; overflow: hidden;">
+            <div class="quote-icon mb-3" style="color: #00ff7f; font-size: 2rem;">"</div>
+            <p style="color: var(--default-color); font-size: 1rem; line-height: 1.6; margin-bottom: 20px; font-style: italic;">
+              "Started with zero programming knowledge. Now I'm building autonomous drones! The hands-on approach and personal mentorship made all the difference. Got placed at a robotics startup within 8 months."
+            </p>
+            <div class="testimonial-author d-flex align-items-center">
+              <div class="author-avatar me-3" style="width: 50px; height: 50px; background: linear-gradient(135deg, #00ff7f, #00bfff); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-weight: bold; font-size: 1.2rem;">A</div>
+              <div>
+                <div style="color: var(--heading-color); font-weight: 600; font-size: 1.1rem;">Arjun Patel</div>
+                <div style="color: rgba(255,255,255,0.7); font-size: 0.9rem;">Robotics Engineer • TechBot Solutions</div>
+                <div style="color: #ffd700; font-size: 0.8rem; margin-top: 2px;">★★★★★ Placed in 8 months</div>
+              </div>
+            </div>
+            <div class="testimonial-decoration" style="position: absolute; top: -10px; right: -10px; width: 40px; height: 40px; background: rgba(0,255,127,0.1); border-radius: 50%; opacity: 0.7;"></div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="testimonial-card h-100" style="background: rgba(255,255,255,0.03); border-radius: 20px; padding: 30px; border: 1px solid rgba(255,255,255,0.1); position: relative; overflow: hidden;">
+            <div class="quote-icon mb-3" style="color: #00bfff; font-size: 2rem;">"</div>
+            <p style="color: var(--default-color); font-size: 1rem; line-height: 1.6; margin-bottom: 20px; font-style: italic;">
+              "The SLAM and navigation module was incredible! Built a warehouse robot that can map and navigate autonomously. The mentors are industry experts who actually care about your success."
+            </p>
+            <div class="testimonial-author d-flex align-items-center">
+              <div class="author-avatar me-3" style="width: 50px; height: 50px; background: linear-gradient(135deg, #00bfff, #ffd700); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-weight: bold; font-size: 1.2rem;">P</div>
+              <div>
+                <div style="color: var(--heading-color); font-weight: 600; font-size: 1.1rem;">Priya Sharma</div>
+                <div style="color: rgba(255,255,255,0.7); font-size: 0.9rem;">M.Tech Student • IIT Delhi</div>
+                <div style="color: #ffd700; font-size: 0.8rem; margin-top: 2px;">★★★★★ Research internship secured</div>
+              </div>
+            </div>
+            <div class="testimonial-decoration" style="position: absolute; top: -10px; right: -10px; width: 40px; height: 40px; background: rgba(0,191,255,0.1); border-radius: 50%; opacity: 0.7;"></div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="testimonial-card h-100" style="background: rgba(255,255,255,0.03); border-radius: 20px; padding: 30px; border: 1px solid rgba(255,255,255,0.1); position: relative; overflow: hidden;">
+            <div class="quote-icon mb-3" style="color: #ff6b35; font-size: 2rem;">"</div>
+            <p style="color: var(--default-color); font-size: 1rem; line-height: 1.6; margin-bottom: 20px; font-style: italic;">
+              "Best investment I made for my career! From mechanical engineer to robotics developer. The practical projects and real robot experience gave me confidence to switch fields successfully."
+            </p>
+            <div class="testimonial-author d-flex align-items-center">
+              <div class="author-avatar me-3" style="width: 50px; height: 50px; background: linear-gradient(135deg, #ff6b35, #ffd700); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; font-weight: bold; font-size: 1.2rem;">R</div>
+              <div>
+                <div style="color: var(--heading-color); font-weight: 600; font-size: 1.1rem;">Rahul Mehta</div>
+                <div style="color: rgba(255,255,255,0.7); font-size: 0.9rem;">Senior Robotics Developer • AutoNav Corp</div>
+                <div style="color: #ffd700; font-size: 0.8rem; margin-top: 2px;">★★★★★ Career transition success</div>
+              </div>
+            </div>
+            <div class="testimonial-decoration" style="position: absolute; top: -10px; right: -10px; width: 40px; height: 40px; background: rgba(255,107,53,0.1); border-radius: 50%; opacity: 0.7;"></div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Call to action for testimonials - COMMENTED OUT -->
+      <!--
+      <div class="text-center mt-4" data-aos="fade-up">
+        <div class="cta-banner p-4" style="background: linear-gradient(135deg, rgba(0,255,127,0.1), rgba(0,191,255,0.1)); border-radius: 20px; border: 1px solid rgba(255,255,255,0.1); max-width: 600px; margin: 0 auto;">
+          <h4 style="color: var(--heading-color); margin-bottom: 15px;">Ready to Join Our Success Stories?</h4>
+          <p style="color: var(--default-color); margin-bottom: 20px; font-size: 1rem;">Start your transformation journey today with a free consultation</p>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdZz49dnSxc2PEufb7UdDtOK8sKRtUqwM-eQ52cpZvETHwRdw/viewform?usp=dialog" 
+             target="_blank" 
+             class="btn btn-success"
+             style="font-size: 1.1rem; padding: 12px 30px; border-radius: 30px; box-shadow: 0 4px 15px rgba(0,255,127,0.3);">
+            🎯 Book Free Consultation
+          </a>
+        </div>
+      </div>
+      -->
+    </div>
+  </section>
+  -->
+
+  <!-- Contact Us Section -->
+  <section id="contact-us" class="contact section" style="background: linear-gradient(135deg, rgba(15, 20, 30, 0.95), rgba(25, 30, 40, 0.98)); position: relative; overflow: hidden; padding: 80px 0;">
+    <!-- Enhanced Background decoration -->
+    <div style="position: absolute; top: -100px; right: -100px; width: 300px; height: 300px; background: radial-gradient(circle, rgba(0,255,127,0.08), transparent); border-radius: 50%; z-index: 1; animation: float 6s ease-in-out infinite;"></div>
+    <div style="position: absolute; bottom: -80px; left: -80px; width: 250px; height: 250px; background: radial-gradient(circle, rgba(0,191,255,0.06), transparent); border-radius: 50%; z-index: 1; animation: float 8s ease-in-out infinite reverse;"></div>
+    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 800px; height: 2px; background: linear-gradient(90deg, transparent, rgba(0,255,127,0.1), rgba(0,191,255,0.1), transparent); opacity: 0.3;"></div>
+    
+    <div class="container" style="position: relative; z-index: 2;">
+      <!-- Professional Header -->
+      <div class="text-center mb-5" data-aos="fade-up">
+        <div class="section-badge mb-4" style="display: inline-block; background: linear-gradient(135deg, rgba(0,255,127,0.15), rgba(0,191,255,0.1)); border: 2px solid rgba(0,255,127,0.3); border-radius: 30px; padding: 12px 25px; backdrop-filter: blur(10px);">
+          <span style="color: #00ff7f; font-size: 0.9rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;">
+            <i class="bi bi-telephone-plus me-2"></i>Get In Touch
+          </span>
+        </div>
+        <h2 style="font-size: 3.2rem; font-weight: 800; margin-bottom: 1.5rem; color: var(--heading-color); background: linear-gradient(135deg, #ffffff, #f0f0f0, #e8e8e8); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; letter-spacing: -1px;">
+          Let's Build the Future Together
+        </h2>
+        <p style="color: rgba(255,255,255,0.85); font-size: 1.3rem; max-width: 650px; margin: 0 auto; line-height: 1.7; font-weight: 400;">
+          Ready to transform your career with cutting-edge robotics skills? Connect with us and discover how RVTLabs can accelerate your journey into the world of autonomous systems.
+        </p>
+        
+        <!-- Trust indicators -->
+        <div class="mt-4 d-flex justify-content-center align-items-center gap-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="trust-badge" style="background: rgba(0,255,127,0.1); border: 1px solid rgba(0,255,127,0.3); border-radius: 20px; padding: 8px 16px;">
+            <i class="bi bi-shield-check" style="color: #00ff7f; margin-right: 6px;"></i>
+            <span style="color: #00ff7f; font-size: 0.85rem; font-weight: 600;">Trusted by 500+ Students</span>
+          </div>
+          <div class="trust-badge" style="background: rgba(0,191,255,0.1); border: 1px solid rgba(0,191,255,0.3); border-radius: 20px; padding: 8px 16px;">
+            <i class="bi bi-clock" style="color: #00bfff; margin-right: 6px;"></i>
+            <span style="color: #00bfff; font-size: 0.85rem; font-weight: 600;">24hr Response Time</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Contact Content -->
+      <div class="row g-5 align-items-stretch">
+        <!-- Contact Information Cards -->
+        <div class="col-lg-8">
+          <div class="row g-4">
+            <!-- Address Card -->
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="contact-card h-100" style="background: linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03)); backdrop-filter: blur(15px); border: 2px solid rgba(255,255,255,0.1); border-radius: 24px; padding: 35px; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative; overflow: hidden; cursor: pointer;">
+                <div class="contact-icon mb-4" style="background: linear-gradient(135deg, #00ff7f, #00d4aa); width: 70px; height: 70px; border-radius: 18px; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 20px rgba(0,255,127,0.3); transition: all 0.3s ease;">
+                  <i class="bi bi-geo-alt" style="font-size: 2rem; color: rgba(0,0,0,0.8);"></i>
+                </div>
+                <h4 style="color: var(--heading-color); font-weight: 700; margin-bottom: 18px; font-size: 1.4rem;">Our Location</h4>
+                <p style="color: rgba(255,255,255,0.9); line-height: 1.7; margin-bottom: 0; font-size: 1.05rem;">
+                  <strong style="color: #00ff7f;">Ground floor, Sr.no.34/2/1</strong><br>
+                  Ambai Dara, Dhayarigaon<br>
+                  <span style="color: #00bfff; font-weight: 600;">Pune 411041, Maharashtra</span>
+                </p>
+                <div class="hover-indicator" style="position: absolute; top: 20px; right: 20px; width: 12px; height: 12px; background: #00ff7f; border-radius: 50%; opacity: 0; transition: all 0.3s ease; transform: scale(0.8);"></div>
+                <div style="position: absolute; top: -15px; right: -15px; width: 60px; height: 60px; background: radial-gradient(circle, rgba(0,255,127,0.15), transparent); border-radius: 50%; opacity: 0.8;"></div>
+              </div>
+            </div>
+
+            <!-- Phone Card -->
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="contact-card h-100" style="background: linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03)); backdrop-filter: blur(15px); border: 2px solid rgba(255,255,255,0.1); border-radius: 24px; padding: 35px; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative; overflow: hidden; cursor: pointer;">
+                <div class="contact-icon mb-4" style="background: linear-gradient(135deg, #00bfff, #0099cc); width: 70px; height: 70px; border-radius: 18px; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 20px rgba(0,191,255,0.3); transition: all 0.3s ease;">
+                  <i class="bi bi-telephone-plus" style="font-size: 2rem; color: rgba(0,0,0,0.8);"></i>
+                </div>
+                <h4 style="color: var(--heading-color); font-weight: 700; margin-bottom: 18px; font-size: 1.4rem;">Call Us Direct</h4>
+                <p style="color: rgba(255,255,255,0.8); margin-bottom: 12px; font-size: 1rem;">Available Mon-Sat, 9AM-7PM</p>
+                <a href="tel:+919657335122" style="color: #00ff7f; font-size: 1.3rem; font-weight: 700; text-decoration: none; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 8px;">
+                  <i class="bi bi-phone-vibrate" style="font-size: 1.1rem;"></i>
+                  +91 96573 35122
+                </a>
+                <div class="hover-indicator" style="position: absolute; top: 20px; right: 20px; width: 12px; height: 12px; background: #00bfff; border-radius: 50%; opacity: 0; transition: all 0.3s ease; transform: scale(0.8);"></div>
+                <div style="position: absolute; top: -15px; right: -15px; width: 60px; height: 60px; background: radial-gradient(circle, rgba(0,191,255,0.15), transparent); border-radius: 50%; opacity: 0.8;"></div>
+              </div>
+            </div>
+
+            <!-- Email Card -->
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="contact-card h-100" style="background: linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03)); backdrop-filter: blur(15px); border: 2px solid rgba(255,255,255,0.1); border-radius: 24px; padding: 35px; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative; overflow: hidden; cursor: pointer;">
+                <div class="contact-icon mb-4" style="background: linear-gradient(135deg, #ffd700, #ffb700); width: 70px; height: 70px; border-radius: 18px; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 20px rgba(255,215,0,0.3); transition: all 0.3s ease;">
+                  <i class="bi bi-envelope-plus" style="font-size: 2rem; color: rgba(0,0,0,0.8);"></i>
+                </div>
+                <h4 style="color: var(--heading-color); font-weight: 700; margin-bottom: 18px; font-size: 1.4rem;">Email Support</h4>
+                <p style="color: rgba(255,255,255,0.8); margin-bottom: 12px; font-size: 1rem;">We respond within 24 hours</p>
+                <a href="mailto:rvtlabs@gmail.com" style="color: #00bfff; font-size: 1.2rem; font-weight: 700; text-decoration: none; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 8px;">
+                  <i class="bi bi-envelope-check" style="font-size: 1.1rem;"></i>
+                  rvtlabs@gmail.com
+                </a>
+                <div class="hover-indicator" style="position: absolute; top: 20px; right: 20px; width: 12px; height: 12px; background: #ffd700; border-radius: 50%; opacity: 0; transition: all 0.3s ease; transform: scale(0.8);"></div>
+                <div style="position: absolute; top: -15px; right: -15px; width: 60px; height: 60px; background: radial-gradient(circle, rgba(255,215,0,0.15), transparent); border-radius: 50%; opacity: 0.8;"></div>
+              </div>
+            </div>
+
+            <!-- Social Media Card -->
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="contact-card h-100" style="background: linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03)); backdrop-filter: blur(15px); border: 2px solid rgba(255,255,255,0.1); border-radius: 24px; padding: 35px; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative; overflow: hidden; cursor: pointer;">
+                <div class="contact-icon mb-4" style="background: linear-gradient(135deg, #ff6b35, #e55a2b); width: 70px; height: 70px; border-radius: 18px; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 20px rgba(255,107,53,0.3); transition: all 0.3s ease;">
+                  <i class="bi bi-share-fill" style="font-size: 2rem; color: rgba(0,0,0,0.8);"></i>
+                </div>
+                <h4 style="color: var(--heading-color); font-weight: 700; margin-bottom: 18px; font-size: 1.4rem;">Connect Socially</h4>
+                <p style="color: rgba(255,255,255,0.8); margin-bottom: 20px; font-size: 1rem;">Follow our latest updates & projects</p>
+                <div class="social-links d-flex gap-3">
+                  <a href="https://linkedin.com/company/rvtlabs" target="_blank" class="social-btn" style="background: linear-gradient(135deg, #0077b5, #005885); color: white; width: 50px; height: 50px; border-radius: 15px; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); font-size: 1.3rem; box-shadow: 0 4px 15px rgba(0,119,181,0.3);" title="LinkedIn">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                  <a href="https://github.com/rvtlabs" target="_blank" class="social-btn" style="background: linear-gradient(135deg, #24292e, #1a1e22); color: white; width: 50px; height: 50px; border-radius: 15px; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); font-size: 1.3rem; box-shadow: 0 4px 15px rgba(36,41,46,0.4);" title="GitHub">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://youtube.com/@rvtlabs" target="_blank" class="social-btn" style="background: linear-gradient(135deg, #ff0000, #cc0000); color: white; width: 50px; height: 50px; border-radius: 15px; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); font-size: 1.3rem; box-shadow: 0 4px 15px rgba(255,0,0,0.3);" title="YouTube">
+                    <i class="bi bi-youtube"></i>
+                  </a>
+                </div>
+                <div class="hover-indicator" style="position: absolute; top: 20px; right: 20px; width: 12px; height: 12px; background: #ff6b35; border-radius: 50%; opacity: 0; transition: all 0.3s ease; transform: scale(0.8);"></div>
+                <div style="position: absolute; top: -15px; right: -15px; width: 60px; height: 60px; background: radial-gradient(circle, rgba(255,107,53,0.15), transparent); border-radius: 50%; opacity: 0.8;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Enhanced Contact Form CTA -->
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="500">
+          <div class="contact-form-cta h-100" style="background: linear-gradient(135deg, rgba(0,255,127,0.12), rgba(0,191,255,0.08)); backdrop-filter: blur(20px); border: 3px solid rgba(0,255,127,0.25); border-radius: 30px; padding: 45px 35px; text-align: center; position: relative; overflow: hidden; box-shadow: 0 20px 60px rgba(0,255,127,0.15);">
+            <!-- Premium top border -->
+            <div style="position: absolute; top: 0; left: 0; right: 0; height: 6px; background: linear-gradient(90deg, #00ff7f, #00bfff, #ffd700, #ff6b35); border-radius: 30px 30px 0 0;"></div>
+            
+            <!-- Background pattern -->
+            <div style="position: absolute; top: 20px; right: 20px; width: 100px; height: 100px; background: radial-gradient(circle, rgba(0,255,127,0.1), transparent); border-radius: 50%; z-index: 1;"></div>
+            <div style="position: absolute; bottom: 20px; left: 20px; width: 80px; height: 80px; background: radial-gradient(circle, rgba(0,191,255,0.08), transparent); border-radius: 50%; z-index: 1;"></div>
+            
+            <div style="position: relative; z-index: 2;">
+              <!-- Enhanced Icon -->
+              <div class="form-icon mb-4" style="background: linear-gradient(135deg, #00ff7f, #00bfff); width: 90px; height: 90px; border-radius: 25px; display: flex; align-items: center; justify-content: center; margin: 0 auto; box-shadow: 0 15px 35px rgba(0,255,127,0.4); transform: perspective(1000px) rotateX(10deg);">
+                <i class="bi bi-chat-heart" style="font-size: 2.5rem; color: rgba(0,0,0,0.8);"></i>
+              </div>
+              
+              <!-- Title and description -->
+              <h3 style="color: var(--heading-color); font-weight: 800; margin-bottom: 20px; font-size: 2rem; letter-spacing: -0.5px;">Quick Contact</h3>
+              <p style="color: rgba(255,255,255,0.9); margin-bottom: 30px; font-size: 1.15rem; line-height: 1.7; font-weight: 400;">
+                Ready to transform your career with robotics? Fill out our quick form and we'll get back to you within <strong style="color: #00ff7f;">24 hours</strong>.
+              </p>
+              
+              <!-- Enhanced CTA Button -->
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdZz49dnSxc2PEufb7UdDtOK8sKRtUqwM-eQ52cpZvETHwRdw/viewform?usp=dialog" 
+                 target="_blank" 
+                 class="contact-form-btn"
+                 style="display: inline-block; background: linear-gradient(135deg, #00ff7f, #00bfff); color: rgba(0,0,0,0.9); font-weight: 800; font-size: 1.15rem; padding: 18px 40px; border-radius: 50px; text-decoration: none; transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 10px 30px rgba(0,255,127,0.4); border: none; text-transform: uppercase; letter-spacing: 0.5px; position: relative; overflow: hidden;">
+                <span style="position: relative; z-index: 2; display: flex; align-items: center; justify-content: center; gap: 10px;">
+                  <i class="bi bi-rocket-takeoff"></i>
+                  Start Your Journey
+                </span>
+                <div style="position: absolute; inset: 0; background: linear-gradient(135deg, #00bfff, #00ff7f); opacity: 0; transition: opacity 0.3s ease; z-index: 1;"></div>
+              </a>
+              
+              <!-- Enhanced Features -->
+              <div class="mt-4" style="padding-top: 25px; border-top: 2px solid rgba(255,255,255,0.15);">
+                <div class="row g-3">
+                  <div class="col-6">
+                    <div class="feature-badge" style="background: rgba(0,255,127,0.15); border: 1px solid rgba(0,255,127,0.3); border-radius: 15px; padding: 12px; text-align: center;">
+                      <div style="color: #00ff7f; font-weight: 800; font-size: 1.3rem; margin-bottom: 4px;">< 24hrs</div>
+                      <small style="color: rgba(255,255,255,0.8); font-size: 0.85rem; font-weight: 500;">Response Time</small>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="feature-badge" style="background: rgba(0,191,255,0.15); border: 1px solid rgba(0,191,255,0.3); border-radius: 15px; padding: 12px; text-align: center;">
+                      <div style="color: #00bfff; font-weight: 800; font-size: 1.3rem; margin-bottom: 4px;">Free</div>
+                      <small style="color: rgba(255,255,255,0.8); font-size: 0.85rem; font-weight: 500;">Consultation</small>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Additional trust indicators -->
+                <div class="mt-3 d-flex justify-content-center align-items-center gap-3">
+                  <div class="trust-mini" style="display: flex; align-items: center; gap: 6px; color: rgba(255,255,255,0.7); font-size: 0.8rem;">
+                    <i class="bi bi-shield-check" style="color: #00ff7f;"></i>
+                    <span>100% Secure</span>
+                  </div>
+                  <div style="width: 1px; height: 15px; background: rgba(255,255,255,0.3);"></div>
+                  <div class="trust-mini" style="display: flex; align-items: center; gap: 6px; color: rgba(255,255,255,0.7); font-size: 0.8rem;">
+                    <i class="bi bi-people" style="color: #00bfff;"></i>
+                    <span>500+ Students</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tab Navigation as 2x2 Grid with new button names - COMMENTED OUT -->
+  <!--
   <div class="container my-5" style="max-width: 420px; margin: 0 auto;">
     <div class="row justify-content-center g-0">
       <div class="col-6 d-flex flex-column">
@@ -71,7 +640,7 @@
       </div>
       <div class="col-6 d-flex flex-column">
         <button class="tab-btn btn w-100 py-4 fs-4 grid-btn-top-right" data-tab="covered" id="tab-covered">
-          Skills You’ll Build
+          Skills You'll Build
         </button>
         <button class="tab-btn btn w-100 py-4 fs-4 grid-btn-bottom-right" data-tab="contact" id="tab-contact">
           Let's Talk
@@ -79,8 +648,11 @@
       </div>
     </div>
   </div>
+  -->
 
   <!-- Tab Sections (all hidden by default) -->
+  <!-- Why RVTLabs Section - COMMENTED OUT -->
+  <!--
   <section id="about" class="about section section-card tab-section" style="display:none;">
   <div class="container">
     <div class="section-title text-center mb-4" data-aos="fade-up">
@@ -121,7 +693,8 @@
     </div>
   </div>
 </section>
-  <section id="services" class="services section section-card tab-section" style="display:none;">
+  -->
+  <section id="services" class="services section section-card tab-section" style="display:none;">>
     <div class="container">
       <div class="section-title text-center mb-4" data-aos="fade-up">
         <h2>Our Offerings</h2>
@@ -151,6 +724,9 @@
       </div>
     </div>
   </section>
+  
+  <!-- Hidden Skills Section - COMMENTED OUT -->
+  <!--
   <section id="covered" class="section section-card tab-section" style="display:none;">
     <div class="container section-title text-center" data-aos="fade-up">
       <h2>We are covered on</h2>
@@ -210,6 +786,9 @@
       </div>
     </div>
   </section>
+  -->
+  <!-- Let's Talk Section - COMMENTED OUT -->
+  <!--
   <section id="contact" class="contact section section-card tab-section" style="display:none;">
   <div class="container">
     <div class="section-title text-center mb-3" data-aos="fade-up">
@@ -257,6 +836,7 @@
     </div>
   </div>
 </section>
+  -->
 
     </main>
 
@@ -308,6 +888,129 @@ document.querySelectorAll('.tab-section').forEach(sec => sec.style.display = 'no
 document.querySelectorAll('.tab-btn').forEach(b => {
   b.classList.remove('active');
   b.disabled = false;
+});
+
+// Counter Animation Function
+function animateCounters() {
+  const counters = document.querySelectorAll('.stat-number');
+  
+  counters.forEach(counter => {
+    const target = parseInt(counter.getAttribute('data-target'));
+    const duration = 2500; // 2.5 seconds for smoother animation
+    const startTime = performance.now();
+    
+    const updateCounter = (currentTime) => {
+      const elapsed = currentTime - startTime;
+      const progress = Math.min(elapsed / duration, 1); // Progress from 0 to 1
+      
+      // Use easing function for smooth animation
+      const easedProgress = progress * (2 - progress); // Ease out
+      const currentValue = Math.floor(easedProgress * target);
+      
+      counter.textContent = currentValue + '+';
+      
+      if (progress < 1) {
+        requestAnimationFrame(updateCounter);
+      } else {
+        counter.textContent = target + '+'; // Ensure final value is exact
+      }
+    };
+    
+    requestAnimationFrame(updateCounter);
+  });
+}
+
+// Enhanced Intersection Observer for stats animation
+const statsSection = document.querySelector('.stats-section');
+if (statsSection) {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Add entrance animation to stat items
+        const statItems = entry.target.querySelectorAll('.stat-item');
+        statItems.forEach((item, index) => {
+          setTimeout(() => {
+            item.style.transform = 'translateY(0) scale(1)';
+            item.style.opacity = '1';
+          }, index * 100);
+        });
+        
+        // Start counter animation
+        setTimeout(() => {
+          animateCounters();
+        }, 200);
+        
+        observer.unobserve(entry.target); // Only animate once
+      }
+    });
+  }, {
+    threshold: 0.3 // Trigger when 30% of the section is visible
+  });
+  
+  // Initial state for animation
+  const statItems = statsSection.querySelectorAll('.stat-item');
+  statItems.forEach(item => {
+    item.style.transform = 'translateY(20px) scale(0.9)';
+    item.style.opacity = '0.7';
+    item.style.transition = 'all 0.6s ease';
+  });
+  
+  observer.observe(statsSection);
+}
+
+// Add hover effects to stat items
+document.querySelectorAll('.stat-item').forEach(item => {
+  item.addEventListener('mouseenter', function() {
+    this.style.transform = 'translateY(-5px) scale(1.02)';
+    this.style.boxShadow = '0 10px 30px rgba(0,0,0,0.2)';
+  });
+  
+  item.addEventListener('mouseleave', function() {
+    this.style.transform = 'translateY(0) scale(1)';
+    this.style.boxShadow = 'none';
+  });
+});
+
+// Add hover effects to about blocks
+document.querySelectorAll('.about-block').forEach(block => {
+  block.addEventListener('mouseenter', function() {
+    this.style.transform = 'translateY(-8px)';
+    this.style.boxShadow = '0 15px 35px rgba(0,0,0,0.15)';
+    this.style.background = 'rgba(255,255,255,0.05) !important';
+  });
+  
+  block.addEventListener('mouseleave', function() {
+    this.style.transform = 'translateY(0)';
+    this.style.boxShadow = 'none';
+    this.style.background = 'rgba(255,255,255,0.02) !important';
+  });
+});
+
+// Enhanced smooth scrolling for internal links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  });
+});
+
+// Add hover effects to social media links
+document.querySelectorAll('.social-link').forEach(link => {
+  link.addEventListener('mouseenter', function() {
+    this.style.transform = 'scale(1.2) translateY(-2px)';
+    this.style.textShadow = '0 4px 8px rgba(0,0,0,0.3)';
+  });
+  
+  link.addEventListener('mouseleave', function() {
+    this.style.transform = 'scale(1) translateY(0)';
+    this.style.textShadow = 'none';
+  });
 });
 </script>
 
